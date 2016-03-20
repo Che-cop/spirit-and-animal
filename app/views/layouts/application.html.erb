@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SpiritAndAnimal</title>
+  <title>Spirit & Animal Bar</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <div class="conatiner">
+    <div class="row">
+      <div class="col-sm-4 title">Spirit & Animal Bar</div>
+      <div class="col-sm-4 text-center"><%= image_tag("crowface.jpg", class: "logo img-respnsive") %></div>
+      <div class="col-sm-4 title">Link Link Link</div>
+    </div>
+  </div>
+
+<h1 class="text-center title">Coming Soon</h1><div class="clear"></div>
+
+  <%= yield %>
 
 </body>
 </html>

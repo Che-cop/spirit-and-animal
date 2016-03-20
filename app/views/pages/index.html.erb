@@ -1,1 +1,13 @@
-<h1>ahoy there!</h1>
+
+<div class="col-xs-10 col-xs-offset-1 text-center">
+  <p>
+    Keep in touch with updates by signing up for our newsletter
+  </p>
+  <%= simple_form_for @email do |f| %>
+    <%= f.input :email, label: false, placeholder: 'Crow@SpiritAndAnimalBar.com' %>
+    <br />
+    <%= f.submit 'Add Me' %>
+
+  <%end%>
+
+</div>
